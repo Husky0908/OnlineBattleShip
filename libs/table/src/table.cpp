@@ -17,13 +17,13 @@ std::vector<std::string> Table::draw()
     std::string middle_line = "├";
     std::string ending_line = "└";
     for(size_t tmp = 0; tmp != m_rows.size() - 1; ++tmp) {
-        beggining_line += "―┬";
-        middle_line += "─┼";
-        ending_line += "─┴";
+        beggining_line += "──┬";
+        middle_line += "──┼";
+        ending_line += "──┴";
     }
-    beggining_line += "─┐";
-    middle_line += "─┤";
-    ending_line += "─┘";
+    beggining_line += "──┐";
+    middle_line += "──┤";
+    ending_line += "──┘";
 
     result.push_back(beggining_line);
 
@@ -35,7 +35,7 @@ std::vector<std::string> Table::draw()
                 line += "🌊";
                 break;
             case TableCellType::Splash:
-                line += "💦";
+                line += "00";
                 break;
             case TableCellType::Ship:
                 break;
