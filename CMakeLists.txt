@@ -9,3 +9,4 @@ add_subdirectory(libs)
 
 add_executable(BattleShip battleship.cpp)
 target_link_libraries(BattleShip table)
+target_link_libraries(BattleShip event_loop)

@@ -24,7 +24,6 @@ std::vector<std::string> Table::draw()
     beggining_line += "──┐";
     middle_line += "──┤";
     ending_line += "──┘";
-
     result.push_back(beggining_line);
 
     for(const auto& row : m_rows) {
